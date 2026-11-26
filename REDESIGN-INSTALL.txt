@@ -1,0 +1,24 @@
+ASCENDAI HUMAN-LED REDESIGN
+
+This package is based on the existing AscendAI Phase 5 project and keeps its backend routes, models, API client, authentication and AI workflow.
+
+WHAT CHANGED
+- Rebuilt the public landing page with a distinct editorial/product-led layout.
+- Replaced the split hero + floating preview card with a large headline, structured report preview, evidence rows and an explanatory side rail.
+- Reworked feature presentation and process sections.
+- Changed the workspace visual language to a dark charcoal sidebar, warm neutral workspace, restrained violet accents and flatter, more practical surfaces.
+- Kept the existing React pages and API integrations for analysis, reports, profile and Resume Builder.
+
+INSTALL
+1. Back up your current AscendAI folder.
+2. Extract this ZIP.
+3. Copy the extracted AscendAI/frontend folder into your existing project and allow files to merge/replace.
+4. Keep your existing backend/.env file. Do not replace it with .env.example.
+5. Do not replace your backend folder if you have made local backend changes; this redesign only requires the frontend files.
+6. In the frontend folder run: npm install
+7. Then run: npm run dev
+
+The backend is unchanged. Start it using your existing backend instructions.
+
+NOTE
+The frontend production build could not be run in this environment because dependency installation timed out. Please run npm install and npm run build locally; share any error output if one appears.

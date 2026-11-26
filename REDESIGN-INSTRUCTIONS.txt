@@ -1,0 +1,15 @@
+ASCENDAI UI REDESIGN PACKAGE
+
+This package contains the existing AscendAI application with a refreshed frontend design.
+It keeps the current React pages, routes, API calls, authentication flow, backend, and Resume Builder.
+
+HOW TO APPLY
+1. Make a backup of your current AscendAI folder.
+2. Extract this ZIP.
+3. Open the extracted AscendAI folder.
+4. Copy its frontend and backend folders into your existing AscendAI project folder and choose Replace/Merge when Windows asks.
+5. IMPORTANT: Your existing backend/.env file is intentionally NOT included. Keep your own .env file unchanged.
+6. Do not copy node_modules from anywhere. If dependencies are missing, run npm install in frontend and backend.
+7. Start backend and frontend the same way you normally do.
+
+The redesign changes frontend presentation only. Backend source and API behavior are retained from the supplied project archive.

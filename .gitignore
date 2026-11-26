@@ -1,0 +1,33 @@
+# Private credentials
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Build files
+dist/
+build/
+
+# Logs
+*.log
+
+# Uploaded files
+uploads/
+temp/
+tmp/
+
+# Private keys
+*.pem
+*.key
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+
+# Testing
+coverage/

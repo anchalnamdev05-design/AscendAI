@@ -1,0 +1,367 @@
+$violet: #7655d9;
+$ink: #28253b;
+$muted: #858196;
+$line: #eae7f1;
+.resume-builder-page {
+  color: $ink;
+}
+.rb-message {
+  margin: 14px 0;
+  padding: 12px 15px;
+  background: #f1edff;
+  border: 1px solid #e2d9ff;
+  color: #5942a6;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.rb-mode-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 24px 0;
+}
+.rb-mode-card {
+  background: white;
+  border: 1px solid $line;
+  border-radius: 16px;
+  padding: 25px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.rb-mode-card:hover {
+  border-color: #c9b9ff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px #49357b12;
+}
+.rb-mode-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  background: #f0ebff;
+  color: $violet;
+  border-radius: 12px;
+}
+.rb-mode-card h2 {
+  font: 800 17px Manrope;
+  margin: 18px 0 8px;
+}
+.rb-mode-card p,
+.rb-muted {
+  font-size: 12px;
+  line-height: 1.7;
+  color: $muted;
+}
+.rb-mode-card strong {
+  display: block;
+  margin-top: 18px;
+  color: $violet;
+  font-size: 12px;
+}
+.rb-saved,
+.rb-upload-card,
+.rb-section {
+  background: white;
+  border: 1px solid $line;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 14px;
+}
+.rb-section h3,
+.rb-section-head h3 {
+  font: 800 13px Manrope;
+  margin: 0;
+}
+.rb-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.rb-small-btn,
+.rb-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid $line;
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 11px;
+  font-size: 11px;
+  font-weight: 700;
+  color: $violet;
+  cursor: pointer;
+}
+.rb-saved-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #f0eef4;
+  padding: 13px 0;
+}
+.rb-saved-row > div {
+  flex: 1;
+}
+.rb-saved-row b,
+.rb-saved-row small {
+  display: block;
+}
+.rb-saved-row b {
+  font-size: 12px;
+}
+.rb-saved-row small {
+  font-size: 10px;
+  color: $muted;
+  margin-top: 4px;
+}
+.rb-icon-danger {
+  border: 0;
+  background: transparent;
+  color: #b75c66;
+  cursor: pointer;
+  padding: 7px;
+}
+.rb-upload-card {
+  max-width: 680px;
+  margin: 20px auto;
+  padding: 25px;
+}
+.rb-upload-card h2 {
+  font: 800 20px Manrope;
+}
+.rb-upload-card p {
+  font-size: 12px;
+  color: $muted;
+  line-height: 1.7;
+}
+.rb-upload {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  padding: 30px;
+  border: 1px dashed #cfc3f2;
+  border-radius: 12px;
+  background: #faf9ff;
+  margin: 20px 0;
+  cursor: pointer;
+  color: $violet;
+}
+.rb-upload input {
+  max-width: 220px;
+  font-size: 11px;
+}
+.rb-upload small {
+  font-size: 10px;
+  color: $muted;
+}
+.rb-upload-card > label:not(.rb-upload),
+.rb-section > label,
+.rb-grid label {
+  display: grid;
+  gap: 6px;
+  margin: 12px 0;
+  font-size: 11px;
+  font-weight: 700;
+  color: #68647b;
+}
+.rb-section input,
+.rb-section textarea,
+.rb-upload-card input,
+.rb-upload-card textarea,
+.rb-item input,
+.rb-item textarea {
+  width: 100%;
+  border: 1px solid $line;
+  border-radius: 8px;
+  padding: 10px 11px;
+  font: 12px inherit;
+  color: $ink;
+  outline: none;
+  background: #fff;
+}
+.rb-section input:focus,
+.rb-section textarea:focus,
+.rb-upload-card input:focus,
+.rb-upload-card textarea:focus {
+  border-color: #b9a6f4;
+  box-shadow: 0 0 0 3px #7655d911;
+}
+.rb-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+.rb-toolbar > div {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+.rb-tag {
+  font-size: 9px;
+  padding: 5px 8px;
+  background: #f0ebff;
+  color: $violet;
+  border-radius: 20px;
+  font-weight: 800;
+}
+.rb-workspace {
+  display: block;
+}
+.rb-workspace.with-preview {
+  display: grid;
+  grid-template-columns: minmax(340px, 1fr) minmax(360px, 0.95fr);
+  align-items: start;
+  gap: 15px;
+}
+.rb-editor {
+  min-width: 0;
+}
+.rb-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 12px;
+}
+.rb-item {
+  border-top: 1px solid #f0eef4;
+  padding: 12px 0;
+}
+.rb-item-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  margin-bottom: 8px;
+}
+.rb-item textarea {
+  margin: 8px 0;
+}
+.resume-paper {
+  background: #fff;
+  border: 1px solid #dedbe6;
+  box-shadow: 0 12px 35px #29203b12;
+  padding: 35px 32px;
+  min-height: 750px;
+  color: #242333;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+  position: sticky;
+  top: 15px;
+}
+.resume-paper header {
+  text-align: center;
+  border-bottom: 2px solid #353247;
+  padding-bottom: 13px;
+  margin-bottom: 14px;
+}
+.resume-paper header h1 {
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  margin: 0 0 5px;
+}
+.resume-paper header p {
+  font-size: 9px;
+  margin: 3px 0;
+  color: #555;
+}
+.resume-paper section {
+  margin: 13px 0;
+}
+.resume-paper section h2 {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid #777;
+  padding-bottom: 4px;
+  margin: 0 0 7px;
+}
+.resume-paper section p {
+  margin: 4px 0;
+}
+.rp-entry {
+  margin: 8px 0;
+}
+.rp-entry-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.rp-entry-top b {
+  font-size: 10px;
+}
+.rp-entry-top span,
+.rp-sub,
+.rp-link {
+  font-size: 9px;
+  color: #555;
+}
+.rp-sub {
+  margin: 2px 0;
+}
+.rp-bullet {
+  padding-left: 8px;
+}
+.rb-spin {
+  animation: rbspin 1s linear infinite;
+}
+@keyframes rbspin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1000px) {
+  .rb-workspace.with-preview {
+    grid-template-columns: 1fr;
+  }
+  .resume-paper {
+    position: static;
+    max-width: 760px;
+    margin: auto;
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .rb-mode-grid {
+    grid-template-columns: 1fr;
+  }
+  .rb-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .rb-grid {
+    grid-template-columns: 1fr;
+  }
+  .rb-upload-card {
+    padding: 17px;
+  }
+  .rb-saved-row {
+    flex-wrap: wrap;
+  }
+}
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+  #resume-paper,
+  #resume-paper * {
+    visibility: visible !important;
+  }
+  #resume-paper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 0;
+    border: 0;
+    box-shadow: none;
+    padding: 12mm;
+    margin: 0;
+  }
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}
